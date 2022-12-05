@@ -1,2 +1,2 @@
-# RFRApp
+# RacialFacialRecApp
 Senior Project 
