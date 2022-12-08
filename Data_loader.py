@@ -3,7 +3,7 @@ import torch
 
 def load_training(root_path, dir, batch_size, kwargs):
     transform = transforms.Compose(
-        [transforms.Resize([256, 256]),
+        [transforms.Resize([112, 112]),
          transforms.RandomCrop(224),
          transforms.RandomHorizontalFlip(),
          transforms.ToTensor()])
