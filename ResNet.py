@@ -92,7 +92,7 @@ def resnet_stack_fn(inputs, out_channels, depthes, use_se=False, use_max_pool=Fa
     return nn
 
 
-def ResNet(input_shape, stack_fn, classes=1000, activation="relu", model_name="resnet", **kwargs):
+def ResNet(input_shape, stack_fn, classes=4, activation="relu", model_name="resnet", **kwargs):
     img_input = keras.layers.Input(shape=input_shape)
     nn = conv2d_no_bias(img_input, 64, 3, strides=1, padding="SAME", name="0_")
     nn = batchnorm_with_activation(nn, activation=activation, name="0_")
